@@ -1,0 +1,6 @@
+#aboutproject {
+  display: flex;
+  min-height: 100vh;
+  background-color: brown;
+  padding-top: 4rem;
+}
