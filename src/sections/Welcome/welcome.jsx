@@ -4,7 +4,9 @@ import './welcome.css';
 export const Welcome = () => {
   return (
     <section id="welcome">
-      <h1>Vítejte na stránkách o našem projektu</h1>
+      <div className="intro">
+        <h1>Vítejte na stránkách o našem projektu</h1>
+      </div>
       <div className="headline-container">
         <div className="headline-black">
           <h1 className="hikeit">Hike It</h1>

@@ -9,15 +9,24 @@
   padding-bottom: 35px;
 }
 
+.intro {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .headline-container {
   display: flex;
   flex-direction: column;
-  background-image: url('../../img/IMG_1802.jpg');
+  background-image: url('../../img/IMG_1803.jpg');
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  min-width: 5rem;
-  min-width: 500px;
-  min-height: 300px;
+  min-width: 250px;
+  min-height: 167px;
   color: white;
   margin-bottom: 0.83em;
 }
@@ -29,7 +38,7 @@
 
 .hikeit {
   font-family: 'Italiana', serif;
-  font-size: 5rem;
+  font-size: 2rem;
   margin: 0;
   font-weight: lighter;
 }
@@ -39,4 +48,26 @@
   margin: 0;
   font-weight: lighter;
   text-align: right;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../img/IMG_1802.jpg');
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    min-height: 300px;
+    color: white;
+    margin-bottom: 0.83em;
+  }
+
+  .hikeit {
+    font-size: 5rem;
+  }
+
 }
