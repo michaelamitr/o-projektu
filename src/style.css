@@ -13,6 +13,7 @@ html {
 
 body {
   margin: 0 auto;
+  background-image: url('./img/boots.png.png');
   background-color: rgb(97 135 19 / 34%);
 }
 
@@ -20,4 +21,6 @@ body {
   max-width: 80vw;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
