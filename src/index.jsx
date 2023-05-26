@@ -5,8 +5,14 @@ import { useState } from 'react';
 import { Welcome } from './sections/Welcome/welcome';
 import { AboutProject } from './sections/AboutProject/aboutproject';
 import { Footer } from './components/Footer/footer';
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Link,
+  Outlet,
+} from 'react-router-dom';
 import { Iva } from './sections/Iva';
+import { Misa } from './sections/Misa/misa';
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -19,15 +25,14 @@ const App = () => {
           <span className="line"></span>
         </button>
         <div className={open ? 'navbar navbar-open' : 'navbar '}>
-          <a href="#welcome">Úvod</a>
-          <a href="#aboutproject">O Projektu</a>
+          <Link to="/welcome">Úvod</Link>
+          <Link to="/about">O projektu</Link>
           <Link to="/iva">Iva Havranová</Link>
-          <a href="#michaela">Michaela Trčková</a>
+          <Link to="/misa">Michaela Trčková</Link>
         </div>
       </header>
       <main>
-        <Welcome />
-        <AboutProject />
+        <Outlet />
       </main>
       <Footer />
     </div>
@@ -38,10 +43,24 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-  },
-  {
-    path: '/iva',
-    element: <Iva />,
+    children: [
+      {
+        path: 'welcome',
+        element: <Welcome />,
+      },
+      {
+        path: 'about',
+        element: <AboutProject />,
+      },
+      {
+        path: 'iva',
+        element: <Iva />,
+      },
+      {
+        path: 'misa',
+        element: <Misa />,
+      },
+    ],
   },
 ]);
 

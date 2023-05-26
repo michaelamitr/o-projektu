@@ -1,5 +1,6 @@
 import React from 'react';
+import './style.css';
 
 export const Iva = () => {
-  return <div>Iva ahoj</div>;
+  return <section id="iva">Iva alalalalala</section>;
 };
