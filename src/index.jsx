@@ -31,9 +31,7 @@ const App = () => {
           <Link to="/misa">Michaela Trčková</Link>
         </div>
       </header>
-      <main>
-        <Outlet />
-      </main>
+      <main>{window.location.pathname === '/' ? <Welcome /> : <Outlet />}</main>
       <Footer />
     </div>
   );
