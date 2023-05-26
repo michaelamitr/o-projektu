@@ -10,12 +10,14 @@ import {
   RouterProvider,
   Link,
   Outlet,
+  useLocation,
 } from 'react-router-dom';
 import { Iva } from './sections/Iva';
 import { Misa } from './sections/Misa/misa';
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
   return (
     <div className="container">
       <header>
@@ -31,7 +33,7 @@ const App = () => {
           <Link to="/misa">Michaela Trčková</Link>
         </div>
       </header>
-      <main>{window.location.pathname === '/' ? <Welcome /> : <Outlet />}</main>
+      <main>{location.pathname === '/' ? <Welcome /> : <Outlet />}</main>
       <Footer />
     </div>
   );
