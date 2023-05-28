@@ -29,6 +29,10 @@ a {
   color: white;
 }
 
+a:hover {
+  border-bottom: 2px solid rgb(104, 163, 9);
+}
+
 .navbar {
   display: none
 }

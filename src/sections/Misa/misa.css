@@ -1,12 +1,17 @@
 #misa {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 85vh;
   background-color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .description {
-  max-width: 80vw;
+  max-width: 50vw;
+}
+
+.misaimg {
+  width: 15rem;
 }
