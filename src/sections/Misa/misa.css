@@ -1,6 +1,12 @@
 #misa {
   display: flex;
-  min-height: 100vh;
-  background-color: brown;
-  padding-top: 4rem;
+  flex-direction: column;
+  min-height: 85vh;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  max-width: 80vw;
 }
