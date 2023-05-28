@@ -8,7 +8,7 @@ import { Footer } from './components/Footer/footer';
 import {
   createBrowserRouter,
   RouterProvider,
-  Link,
+  NavLink,
   Outlet,
   useLocation,
 } from 'react-router-dom';
@@ -27,10 +27,18 @@ const App = () => {
           <span className="line"></span>
         </button>
         <div className={open ? 'navbar navbar-open' : 'navbar '}>
-          <Link to="/welcome">Úvod</Link>
-          <Link to="/about">O projektu</Link>
-          <Link to="/iva">Iva Havranová</Link>
-          <Link to="/misa">Michaela Trčková</Link>
+          <NavLink to="/welcome" activeclassname="active">
+            Úvod
+          </NavLink>
+          <NavLink to="/about" activeclassname="active">
+            O projektu
+          </NavLink>
+          <NavLink to="/iva" activeclassname="active">
+            Iva Havranová
+          </NavLink>
+          <NavLink to="/misa" activeclassname="active">
+            Michaela Trčková
+          </NavLink>
         </div>
       </header>
       <main>{location.pathname === '/' ? <Welcome /> : <Outlet />}</main>

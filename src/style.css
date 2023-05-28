@@ -30,7 +30,11 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid rgb(104, 163, 9);
+  color: rgb(83, 130, 7);
+}
+
+.active {
+  color: rgb(104, 163, 9);
 }
 
 .navbar {
@@ -82,7 +86,7 @@ a:hover {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 854px) {
   .navbar {
     display: flex;
     justify-content: flex-end;

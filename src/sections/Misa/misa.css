@@ -13,5 +13,12 @@
 }
 
 .misaimg {
-  width: 15rem;
+  width: 7rem;
+}
+
+
+@media (min-width: 854px) {
+  .misaimg {
+    width: 15rem;
+  }
 }
