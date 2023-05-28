@@ -1,6 +1,6 @@
 #aboutproject {
-  display: flex;
   min-height: 100vh;
-  background-color: brown;
+  background-color: white;
   padding-top: 4rem;
+  padding: 4rem 2rem;
 }

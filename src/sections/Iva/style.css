@@ -1,6 +1,32 @@
 #iva {
+  background-color: white;
+  min-height: 85vh;
+}
+
+.intro__iva {
   display: flex;
-  min-height: 100vh;
-  background-color: brown;
-  padding-top: 4rem;
+  position: relative;
+  top: 5rem;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.intro__text {
+  max-width: 50%;
+}
+
+@media (max-width: 854px) {
+  .intro__photo--iva {
+    width: 10rem;
+  }
+
+  .intro__iva {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5rem;
+    padding: 1rem;
+    align-items: center;
+    gap: 2rem
+  }
 }
